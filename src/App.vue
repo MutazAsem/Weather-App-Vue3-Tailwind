@@ -1,11 +1,15 @@
 <script setup>
-import Home from "./views/Home.vue";
+import { RouterView } from 'vue-router';
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  <Home></Home>
+  <div class="felx flex-col main-h-screen font-Roboto bg-weather-primary">
+    <Navbar/>
+    <router-view/>
+  </div>
 </template>
 
-<style scoped>
+<style>
 
 </style>
